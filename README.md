@@ -2,9 +2,13 @@
 #### Eduardo Lozano
 ---
 <br/><br/>
-
 Introduction
 ===
+
+(Download First)
+[Demo](https://github.com/elozano2/HW1)
+
+
 For this assignment, I decided to go ahead and try out the elevator  
 available at the Hyatt Place located on Mac Davis Lane. The assignment  
 asked me to record the elevator in use, making sure to record  
@@ -39,22 +43,3 @@ A Grade
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Demo](https://github.com/elozano2/Basic_Layout)
