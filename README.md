@@ -19,11 +19,11 @@ for each letter grade.
 
 C Grade
 ===
-[Panel1](https://github.com/elozano2/HW1/blob/master/Panel_1.png)
-[Panel2](https://github.com/elozano2/HW1/blob/master/Panel_2.png)
+![Panel1](https://github.com/elozano2/HW1/blob/master/Panel_1.png)
+![Panel2](https://github.com/elozano2/HW1/blob/master/Panel_2.png)
 
 
-[Video](https://github.com/elozano2/HW1/blob/master/ezgif.com-video-to-gif.gif)
+![Video](https://github.com/elozano2/HW1/blob/master/ezgif.com-video-to-gif.gif)
 
 While this elevator has some good design, there were a few things I found problematic.
 
