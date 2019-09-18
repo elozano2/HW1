@@ -1,4 +1,6 @@
-https://elozano2.github.io/HW1/
+
+Repo: https://github.com/elozano2/HW1  
+Presentation: https://elozano2.github.io/HW1/
 
 ### Computer Human Interaction HW1  
 #### Eduardo Lozano
