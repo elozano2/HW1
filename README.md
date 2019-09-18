@@ -26,7 +26,7 @@ C Grade
 ![Panel_2](Panel_2.png)
 
 
-![Video](https://github.com/elozano2/HW1/blob/master/ezgif.com-video-to-gif.gif)
+![Video](ezgif.com-video-to-gif.gif)
 
 While this elevator has some good design, there were a few things I found problematic.
 
