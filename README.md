@@ -9,21 +9,13 @@ Introduction
 [Demo](https://github.com/elozano2/HW1)
 
 
-For this assignment, I decided to go ahead and try out the elevator  
-available at the Hyatt Place located on Mac Davis Lane. The assignment  
-asked me to record the elevator in use, making sure to record  
-how the elevator panel looked like and how the panel itslef functioned  
-when interacted with by someone. I was then required to analize  
-the video and figure out the positives and negatives of the elevator  
-and come up with solutions that could fix these negatives. In addition  
-I was required to create a sketch of the improved design with proper  
-reasoning for these changes. Finally, I was required to create a program that  
-shows this design in action. In this case, I decided to create my program in  
-Processing.
+This assignment required me to visit an elevator and record myself using it.  
+I was then required to find what is right and wrong with the current design  
+of the elevator and see if I could come up with a better design. Finally,  
+I was required to sketch my design and build a small application that  
+shows that design in action. This readme will be slpit based on different criterea  
+for each letter grade.
 
-Throughout this readme, you will see it will be split into different sections.  
-Each section will be based on a letter grade, where I was required to  
-meet some criterea in order to achieve that letter grade.
 
 C Grade
 ===
@@ -37,6 +29,7 @@ While this elevator has some good design, there were a few things I found proble
 
 B Grade
 ===
+![Sketch](https://github.com/elozano2/HW1/blob/master/Elevator_Sketch.png)
 
 A Grade
 ===
