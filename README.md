@@ -52,20 +52,19 @@ B Grade
 ===
 ![Sketch](Elevator_Sketch.png)
 
-With my new design, I prioritized feedback and minimalism. I believe this new design is unique since it prioritizes  
-user friendliness to reduce confusion when being used. This means users will find it easy to operate the elevator and prevent  
-them from getting lost while trying to get to their hotel room.
+I believe my design of the elevator is unique because it prioritizes user friendliness and simplicity to reduce confusion.  
+This will prevent users fron getting lost while trying to get to their hotel rooms.
 
 As you can see, I decided to seperate the buttons for the guests and the buttons for the staff into two different sections.
 In addition, I added a label to show that the buttons with an "R" are for staff use only. This will show guests that
 those buttons should not be pressed. I also added the open, close, alarm, and call buttons at the bottom of the panel with  
 a red outline. This red outline shows people that those buttons are for emergency purposes and are not meant to be  
-used when trying to get to a desired floor. I removed the second set of open and close buttons and made the first set
+pressed for non-emergency purposes. I removed the second set of open and close buttons and made the first set
 of buttons control both doors. This will prevent the number of buttons on the panel and make the overall look cleaner. 
 Instead of having the beep go off when the elevator arrives to a floor, It would be more benificial to have a voice  
 go off and say what floor the elevator is stopping in. This can help blind people navigate when they operate the elevator.
-Phisically, I decided to move the panel slighly lower to accomodate people in a wheelchair. This will make it easier  
-for them to press the buttons without having to reach out and put them in danger of falling out of their chair.
+Physically, I decided to move the panel slighly lower to accomodate people in wheelchairs. This will make it easier  
+for them to press the buttons without having to reach out and put themselves in danger of falling out of their chair.
 
 A Grade
 ===
