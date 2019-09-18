@@ -21,7 +21,7 @@ for each letter grade.
 
 C Grade
 ===
-![Panel1](https://github.com/elozano2/HW1/blob/master/Panel_1.png)
+![Panel1](Panel_1.png)
 ![Panel2](https://github.com/elozano2/HW1/blob/master/Panel_2.png)
 
 
