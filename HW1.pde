@@ -16,7 +16,7 @@ color closeNeutral, openNeutral, alarmNeutral, callNeutral;
 //color closeOn, openOn, alarmOn, callOn;
 color btnHighlight;
 color screen, background;
-color upArrow, downArrow, line, floor;
+color upArrow, downArrow, line, floor, closeSign;
 char letter = 'R', flr = '1';
 boolean btn1Over = false;
 boolean btn2Over = false;
@@ -60,6 +60,7 @@ void setup(){
   downArrow = color(0);
   line = color(0);
   floor = color(0);
+  closeSign = color(0);
   ellipseMode(CENTER);
   f = createFont("Arial", 16, true);
   flr = '1';
@@ -283,13 +284,13 @@ void draw(){
   stroke(0);
   strokeWeight(5);
   
-  triangle(30, 720, 40, 730, 40, 710); 
-  line(50, 700, 50, 735);
-  triangle(70, 720, 60, 730,  60, 710);
-  
-  triangle(140, 720, 130, 730, 130, 710);
+  triangle(130, 720, 140, 730, 140, 710); 
   line(150, 700, 150, 735);
-  triangle(160, 720, 170, 730, 170, 710);
+  triangle(170, 720, 160, 730,  160, 710);
+  
+  triangle(40, 720, 30, 730, 30, 710);
+  line(50, 700, 50, 735);
+  triangle(60, 720, 70, 730, 70, 710);
   
   textFont(f, 55);
   fill(#AF1313);
@@ -309,8 +310,8 @@ void draw(){
   stroke(downArrow);
   triangle(225, 100, 215, 90, 235, 90); 
   
-  fill(#AF1313);
-  stroke(#AF1313);
+  fill(closeSign);
+  stroke(closeSign);
   triangle(155, 75, 185, 55, 185, 95);
   triangle(125, 75, 95, 55, 95, 95);
   line(140, 50, 140, 100);
@@ -586,37 +587,58 @@ void mousePressed(){
     thread("arrowsOff");
   }
   if(btn1ROver){
+    nextFloor = 5;
+    whichWay();
     btn1RNeutral = color(#FFF181);
-    thread("fifthRFloor");
+    thread("fifthRFoor");
+    thread("arrowsOff");
   }
   if(btn2ROver){
+    nextFloor = 4;
+    whichWay();
     btn2RNeutral = color(#FFF181);
     thread("fourthRFloor");
+    thread("arrowsOff");
 
   }
   if(btn3ROver){
+    nextFloor = 3;
+    whichWay();
     btn3RNeutral = color(#FFF181);
     thread("thirdRFloor");
+    thread("arrowsOff");
   }
   if(btn4ROver){
+    nextFloor = 2;
+    whichWay();
     btn4RNeutral = color(#FFF181);
     thread("secondRFloor");
+    thread("arrowsOff");
   }
   if(btn5ROver){
+    nextFloor = 1;
+    whichWay();
     btn5RNeutral = color(#FFF181);
     thread("firstRFloor");
+    thread("arrowsOff");
   }
   if(closeOver){
-    closeNeutral = color(255, 0 ,0);
+    closeNeutral = color(#AF1313);
+    closeSign = color(#AF1313);
+    thread("closeDoor");
+    thread("closeOn");
   }
   if(openOver){
     openNeutral = color(255, 0 , 0);
+    thread("openDoor");
   }
   if(alarmOver){
     alarmNeutral = color(255, 0 , 0 );
+    thread("alarm");
   }
   if(callOver){
     callNeutral = color(255, 0 , 0); 
+    thread("call");
   }
 }
 
@@ -813,30 +835,56 @@ void fifthRFloor(){
   delay(2000);
   btn1RNeutral = color(255);
   file1.play();
+  currentFloor = 5;
 }
 
 void fourthRFloor(){
   delay(2000);
   btn2RNeutral = color(255);
   file2.play();
+  currentFloor = 4;
 }
 
 void  thirdRFloor(){
   delay(2000);
   btn3RNeutral = color(255);
   file3.play();
+  currentFloor = 3;
 }
 
 void secondRFloor(){
   delay(2000);
   btn4RNeutral = color(255);
   file4.play();
+  currentFloor = 2;
 }
 
 void firstRFloor(){
   delay(2000);
   btn5RNeutral = color(255);
   file5.play();
+  currentFloor = 1;
+}
+
+void openDoor(){
+  delay(2000);
+  openNeutral = color(255);
+}
+
+void closeDoor(){
+  delay(2000);
+  closeNeutral = color(255);
+  closeSign = color(0);
+}
+
+void alarm(){
+  delay(2000);
+  alarmNeutral = color(255);
+}
+
+void call(){
+  delay(2000);
+  callNeutral = color(255);
 }
 
 void whichWay(){
