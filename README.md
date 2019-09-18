@@ -5,7 +5,7 @@
 Introduction
 ===
 
-(Download First)
+(Open in new tab)
 [Demo](https://github.com/elozano2/HW1)
 
 
