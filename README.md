@@ -32,7 +32,7 @@ While this elevator has some good design, there were a few things I found proble
 
 B Grade
 ===
-![Sketch](https://github.com/elozano2/HW1/blob/master/Elevator_Sketch.png)
+![Sketch](Elevator_Sketch.png)
 
 A Grade
 ===
