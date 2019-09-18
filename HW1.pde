@@ -17,7 +17,7 @@ color closeNeutral, openNeutral, alarmNeutral, callNeutral;
 color btnHighlight;
 color screen, background;
 color upArrow, downArrow, line, floor, closeSign;
-char letter = 'R', flr = '1';
+char letter = ' ', flr = '1';
 boolean btn1Over = false;
 boolean btn2Over = false;
 boolean btn3Over = false;
@@ -554,35 +554,45 @@ void mousePressed(){
   if(btn1Over){
     nextFloor = 5;
     btn1Neutral = color(#FFF181);
+    closeSign = color(#AF1313);
     whichWay();
+    thread("doorClosing");
     thread("fifthFloor");
     thread("arrowsOff");
   }
   if(btn2Over){
     nextFloor = 4;
     btn2Neutral = color(#FFF181);
+    closeSign = color(#AF1313);
     whichWay();
+    thread("doorClosing");
     thread("fourthFloor");
     thread("arrowsOff");
   }
   if(btn3Over){
     nextFloor = 3;
     btn3Neutral = color(#FFF181);
+    closeSign = color(#AF1313);
     whichWay();
+    thread("doorClosing");
     thread("thirdFloor");
     thread("arrowsOff");
   }
   if(btn4Over){
     nextFloor = 2;
     btn4Neutral = color(#FFF181);
+    closeSign = color(#AF1313);
     whichWay();
+    thread("doorClosing");
     thread("secondFloor");
     thread("arrowsOff");
   }
   if(btn5Over){
     nextFloor = 1;
     btn5Neutral = color(#FFF181);
+    closeSign = color(#AF1313);
     whichWay();
+    thread("doorClosing");
     thread("firstFloor");
     thread("arrowsOff");
   }
@@ -590,13 +600,17 @@ void mousePressed(){
     nextFloor = 5;
     whichWay();
     btn1RNeutral = color(#FFF181);
-    thread("fifthRFoor");
+    closeSign = color(#AF1313);
+    thread("doorClosing");
+    thread("fifthRFloor");
     thread("arrowsOff");
   }
   if(btn2ROver){
     nextFloor = 4;
     whichWay();
     btn2RNeutral = color(#FFF181);
+    closeSign = color(#AF1313);
+    thread("doorClosing");
     thread("fourthRFloor");
     thread("arrowsOff");
 
@@ -605,6 +619,8 @@ void mousePressed(){
     nextFloor = 3;
     whichWay();
     btn3RNeutral = color(#FFF181);
+    closeSign = color(#AF1313);
+    thread("doorClosing");
     thread("thirdRFloor");
     thread("arrowsOff");
   }
@@ -612,6 +628,8 @@ void mousePressed(){
     nextFloor = 2;
     whichWay();
     btn4RNeutral = color(#FFF181);
+    closeSign = color(#AF1313);
+    thread("doorClosing");
     thread("secondRFloor");
     thread("arrowsOff");
   }
@@ -619,6 +637,8 @@ void mousePressed(){
     nextFloor = 1;
     whichWay();
     btn5RNeutral = color(#FFF181);
+    closeSign = color(#AF1313);
+    thread("doorClosing");
     thread("firstRFloor");
     thread("arrowsOff");
   }
@@ -626,7 +646,6 @@ void mousePressed(){
     closeNeutral = color(#AF1313);
     closeSign = color(#AF1313);
     thread("closeDoor");
-    thread("closeOn");
   }
   if(openOver){
     openNeutral = color(255, 0 , 0);
@@ -801,6 +820,8 @@ void fifthFloor(){
   btn1Neutral = color(255);
   file1.play();
   currentFloor = 5;
+  flr = '5';
+  letter = ' ';
 }
 
 void fourthFloor(){
@@ -808,6 +829,8 @@ void fourthFloor(){
   btn2Neutral = color(255);
   file2.play();
   currentFloor = 4;
+  flr = '4';
+  letter = ' ';
 }
 
 void  thirdFloor(){
@@ -815,6 +838,8 @@ void  thirdFloor(){
   btn3Neutral = color(255);
   file3.play();
   currentFloor = 3;
+  flr = '3';
+  letter = ' ';
 }
 
 void secondFloor(){
@@ -822,6 +847,8 @@ void secondFloor(){
   btn4Neutral = color(255);
   file4.play();
   currentFloor = 2;
+  flr = '2';
+  letter = ' ';
 }
 
 void firstFloor(){
@@ -829,6 +856,8 @@ void firstFloor(){
   btn5Neutral = color(255);
   file5.play();
   currentFloor = 1;
+  flr = '1';
+  letter = ' ';
 }
 
 void fifthRFloor(){
@@ -836,6 +865,8 @@ void fifthRFloor(){
   btn1RNeutral = color(255);
   file1.play();
   currentFloor = 5;
+  flr =  '5';
+  letter = 'R';
 }
 
 void fourthRFloor(){
@@ -843,6 +874,8 @@ void fourthRFloor(){
   btn2RNeutral = color(255);
   file2.play();
   currentFloor = 4;
+  flr = '4';
+  letter = 'R';
 }
 
 void  thirdRFloor(){
@@ -850,6 +883,8 @@ void  thirdRFloor(){
   btn3RNeutral = color(255);
   file3.play();
   currentFloor = 3;
+  flr = '3';
+  letter = 'R';
 }
 
 void secondRFloor(){
@@ -857,6 +892,8 @@ void secondRFloor(){
   btn4RNeutral = color(255);
   file4.play();
   currentFloor = 2;
+  flr = '2';
+  letter = 'R';
 }
 
 void firstRFloor(){
@@ -864,6 +901,8 @@ void firstRFloor(){
   btn5RNeutral = color(255);
   file5.play();
   currentFloor = 1;
+  flr = '1';
+  letter = 'R';
 }
 
 void openDoor(){
@@ -908,4 +947,9 @@ void arrowsOff(){
   downArrow = color(0);
   upArrow = color(0);
   line = color(0);
+}
+
+void doorClosing(){
+  delay(1000);
+  closeSign = color(0);
 }
