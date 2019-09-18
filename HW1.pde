@@ -856,7 +856,7 @@ void whichWay(){
 }
 
 void arrowsOff(){
-  delay(2000);
+  delay(2005);
   downArrow = color(0);
   upArrow = color(0);
   line = color(0);
