@@ -4,8 +4,9 @@ https://elozano2.github.io/HW1/
 #### Eduardo Lozano
 ---
 <br/><br/>
+
 Introduction
-===
+---
 
 (Open in new tab)
 [Demo](https://github.com/elozano2/HW1)
